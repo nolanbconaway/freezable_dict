@@ -23,12 +23,7 @@ setup(
     install_requires=[],
     python_requires='>=3.5',
     extras_require={
-        'test': ['flake8'],
-        'docs': [
-            'numpydoc',
-            'recommonmark',
-            'sphinx',
-        ]
+        'test': ['flake8']
     },
     classifiers=[
         'Programming Language :: Python :: 3.5',
