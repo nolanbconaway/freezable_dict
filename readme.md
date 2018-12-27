@@ -1,5 +1,7 @@
 # freezable_dict
 
+[![Build Status](https://travis-ci.org/nolanbconaway/freezable_dict.svg?branch=master)](https://travis-ci.org/nolanbconaway/freezable_dict)
+
 This repo provides a single class, a freezable dict, `FreezableDict`.
 
 A `FreezableDict` is basically identical to a regular dict, but it offers the

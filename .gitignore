@@ -11,3 +11,6 @@ sftp-config.json
 venv/
 .env
 .tox
+build/*
+dist/*
+*.egg-info
