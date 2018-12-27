@@ -41,7 +41,7 @@ Regular dict stuff works as usual.
 >>> for k, v in d.items():
 ...     print(k, v)
 ...
-a 3
+a 1
 b 2
 ```
 
