@@ -1,6 +1,7 @@
 # freezable_dict
 
 [![Build Status](https://travis-ci.org/nolanbconaway/freezable_dict.svg?branch=master)](https://travis-ci.org/nolanbconaway/freezable_dict)
+[![PyPI version](https://badge.fury.io/py/freezable-dict.svg)](https://badge.fury.io/py/freezable-dict)
 
 This repo provides a single class, a freezable dict, `FreezableDict`.
 
