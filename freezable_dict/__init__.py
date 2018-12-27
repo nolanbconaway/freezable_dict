@@ -23,7 +23,7 @@ class FreezableDict(dict):
         >>> for k, v in d.items():
         ...     print(k, v)
         ...
-        a 3
+        a 1
         b 2
 
     Freeze your dict and you can use it as a set item, dictionary key, etc.
