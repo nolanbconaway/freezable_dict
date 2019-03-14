@@ -64,6 +64,12 @@ class FreezableDict(dict):
         self._hash = None
         super().__init__(*args, **kwargs)
 
+    def __repr__(self):
+        """Copy from OrderedDict repr."""
+        if not self:
+            return "%s()" % (self.__class__.__name__,)
+        return "%s(%r)" % (self.__class__.__name__, list(self.items()))
+
     def freeze(self):
         """Freeze the dict in its current state and compute the hash."""
         self._frozen = True
