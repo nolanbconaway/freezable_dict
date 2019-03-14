@@ -90,13 +90,13 @@ class FreezableDict(dict):
     def __setitem__(self, k, v):
         """First check if the dict is frozen; if not do a setitem."""
         if self._frozen:
-            raise TypeError('Frozen dicts cannot be changed! thaw to proceed.')
+            raise TypeError("Frozen dicts cannot be changed! thaw to proceed.")
         super().__setitem__(k, v)
 
     def __delitem__(self, k):
         """First check if the dict is frozen; if not do a setitem."""
         if self._frozen:
-            raise TypeError('Frozen dicts cannot be changed! thaw to proceed.')
+            raise TypeError("Frozen dicts cannot be changed! thaw to proceed.")
         super().__delitem__(k)
 
     def __hash__(self):
@@ -106,9 +106,9 @@ class FreezableDict(dict):
         """
         # checks that everything looks right
         if not self._frozen:
-            raise TypeError('Thawed dicts do not hash! freeze me to proceed.')
+            raise TypeError("Thawed dicts do not hash! freeze me to proceed.")
 
         if self._hash is None:
-            raise ValueError('Dict is frozen but has no hash. This is a bug.')
+            raise ValueError("Dict is frozen but has no hash. This is a bug.")
 
         return self._hash
